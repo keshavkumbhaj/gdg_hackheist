@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap');
 
-
-/* =========================================
-   RESET
-========================================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +12,9 @@ html {
 
 body {
     margin: 0;
-
     background-color: #090909;
     color: #f2f2f2;
-
     font-family: "DM Mono", monospace;
-
     overflow-x: hidden;
 }
 
@@ -36,9 +28,7 @@ button {
 }
 
 
-/* =========================================
-   SHARED
-========================================= */
+/* SHARED */
 
 .section {
     padding: 110px 7vw;
@@ -48,13 +38,9 @@ button {
     display: flex;
     align-items: center;
     gap: 15px;
-
     padding-bottom: 20px;
-
     border-bottom: 1px solid #272727;
-
     color: #777;
-
     font-size: 11px;
     letter-spacing: 2px;
 }
@@ -69,26 +55,18 @@ button {
 
 .small-label {
     color: #b30000;
-
     font-size: 11px;
     letter-spacing: 3px;
 }
 
 
-/* =========================================
-   HERO
-========================================= */
-
+/* HERO */
 .hero {
     min-height: 100vh;
-
     position: relative;
-
     display: flex;
     flex-direction: column;
-
     padding: 25px 7vw 25px;
-
     background-color: #090909;
     background-image:
         linear-gradient(
@@ -97,47 +75,35 @@ button {
             rgba(9, 9, 9, 0.75)
         ),
         url("./assets/images/hackheist-bg.png");
-
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 
-/* =========================================
-   NAVBAR
-========================================= */
+/* NAVBAR */
 
 .navbar {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: relative;
     z-index: 100;
-
     padding: 20px 0;
 }
 
-
-/* =========================================
-   BRAND
-========================================= */
 
 .nav-brand {
     display: flex;
     align-items: center;
     gap: 12px;
-
     color: #f2f2f2;
     text-decoration: none;
-
     font-family: "DM Mono", monospace;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 1.5px;
-
     white-space: nowrap;
 }
 
@@ -147,54 +113,41 @@ button {
 .brand-mark {
     width: 36px;
     height: 36px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-shrink: 0;
 }
 
 .brand-mark img {
     display: block;
-
     width: 36px;
     height: 36px;
-
     min-width: 36px;
     min-height: 36px;
-
     object-fit: contain;
-
     opacity: 1;
     visibility: visible;
-
-    /* Don't apply old HH effects */
     filter: none;
     mix-blend-mode: normal;
 }
 
 
-/* =========================================
-   NAV LINKS
-========================================= */
+/* NAVLINKS */
 
 .navlinks {
     display: flex;
     align-items: center;
     gap: 32px;
-
     font-family: "DM Mono", monospace;
     font-size: 11px;
     letter-spacing: 1px;
-
     color: #aaa;
 }
 
 .navlinks a {
     color: inherit;
     text-decoration: none;
-
     transition: color 0.25s ease;
 }
 
@@ -203,79 +156,60 @@ button {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 650px) {
-
     .navbar {
         padding: 16px 0;
     }
-
     .nav-brand {
         gap: 8px;
         font-size: 9px;
         letter-spacing: 0.8px;
     }
-
     .brand-mark {
         width: 30px;
         height: 30px;
     }
-
     .brand-mark img {
         width: 30px;
         height: 30px;
         min-width: 30px;
         min-height: 30px;
     }
-
     .navlinks {
         gap: 12px;
         font-size: 9px;
     }
-    
-}menu-btn {
-    display: none;
+}
 
+menu-btn {
+    display: none;
     width: 38px;
     height: 32px;
-
     padding: 0;
-
     border: none;
     background: transparent;
-
     cursor: pointer;
 }
 
 .menu-btn span {
     display: block;
-
     width: 25px;
     height: 1px;
-
     margin: 7px auto;
-
     background: #fff;
 }
 
 
-/* =========================================
-   HERO CONTENT
-========================================= */
+/* HERO CONTENT */
 
 .hero-content {
-    flex: 1;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
-
     padding: 80px 0;
 }
 
@@ -283,11 +217,8 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
-
     margin-bottom: 30px;
-
     color: #888;
-
     font-size: 10px;
     letter-spacing: 3px;
 }
@@ -295,15 +226,11 @@ button {
 .hero-kicker span {
     width: 28px;
     height: 1px;
-
     background: #b30000;
 }
 
 
-/* =========================================
-   HACKHEIST LOGO
-========================================= */
-
+/* HACKHEIST LOGO */
 .logo-container {
     display: flex;
     align-items: center;
@@ -320,7 +247,6 @@ button {
 
 .money {
     color: #ddd;
-
     background: linear-gradient(
         180deg,
         #ffffff 0%,
@@ -330,9 +256,7 @@ button {
 
     -webkit-background-clip: text;
     background-clip: text;
-
     -webkit-text-fill-color: transparent;
-
     filter: drop-shadow(
         3px 3px 2px rgba(0, 0, 0, 0.8)
     );
@@ -340,24 +264,17 @@ button {
 
 .heist {
     margin-left: 8px;
-
     padding: 7px 18px;
-
     color: #080808;
-
     background: #b30000;
-
     border: 4px solid #790000;
-
     box-shadow:
         inset 0 0 15px rgba(0, 0, 0, 0.55),
         0 0 12px rgba(179, 0, 0, 0.25);
 }
 
 
-/* =========================================
-   TAGLINE
-========================================= */
+/* TAGLINE */
 
 .tagline {
     margin-top: 35px;
@@ -374,17 +291,13 @@ button {
 }
 
 
-/* =========================================
-   EVENT DETAILS
-========================================= */
+/* EVENT DETAILS */
 
 .event-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 25px;
-
     margin-top: 35px;
 }
 
@@ -403,23 +316,18 @@ button {
 .host-img img {
     width: 55px;
     height: 55px;
-
     object-fit: contain;
-
-    mix-blend-mode: screen;
 }
 
 .host-tag {
     color: #00c9a7;
-
     font-size: 12px;
     font-weight: 600;
-
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.event-meta {
+.event-data {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -449,10 +357,7 @@ button {
     color: #b30000;
 }
 
-
-/* =========================================
-   BUTTON
-========================================= */
+/* REGISTER BUTTON */
 
 .cta,
 .final-cta {
@@ -460,24 +365,16 @@ button {
     align-items: center;
     justify-content: center;
     gap: 25px;
-
     padding: 14px 30px;
-
     margin-top: 35px;
-
     background: #a90000;
     color: white;
-
     border: 1px solid #cf0000;
-
     border-radius: 3px;
-
     font-size: 12px;
     font-weight: 700;
-
     letter-spacing: 2px;
     text-transform: uppercase;
-
     cursor: pointer;
 
     box-shadow: 0 0 18px rgba(179, 0, 0, 0.18);
@@ -504,29 +401,7 @@ button {
 }
 
 
-/* =========================================
-   HERO FOOTER
-========================================= */
-
-.hero-bottom {
-    display: flex;
-    justify-content: space-between;
-
-    padding-top: 20px;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-
-    color: #555;
-
-    font-size: 9px;
-    letter-spacing: 2px;
-}
-
-
-/* =========================================
-   ABOUT
-========================================= */
-
+/* ABOUT SECTION */
 .about-section {
     background: #0c0c0c;
 }
@@ -545,17 +420,11 @@ button {
 .details-heading h2,
 .final-content h2 {
     margin-top: 18px;
-
     font-family: "Barlow Condensed", sans-serif;
-
     font-size: clamp(55px, 7vw, 100px);
-
     line-height: 0.88;
-
     font-weight: 800;
-
     letter-spacing: -2px;
-
     text-transform: uppercase;
 }
 
@@ -570,48 +439,36 @@ button {
 
 .about-card-custom {
     max-width: 620px;
-
     padding-left: 30px;
-
     border-left: 2px solid #b30000;
 }
 
 .about-card-custom p {
     margin-bottom: 20px;
-
     color: #999;
-
     font-size: 14px;
     line-height: 1.8;
 }
 
 .about-card-custom p:first-child {
     color: #ddd;
-
     font-size: 17px;
 }
 
 .about-footer {
     display: flex;
     gap: 0;
-
     margin-top: 80px;
-
     border-top: 1px solid #252525;
     border-bottom: 1px solid #252525;
 }
 
 .about-footer span {
     flex: 1;
-
     padding: 18px;
-
     border-right: 1px solid #252525;
-
     color: #666;
-
     text-align: center;
-
     font-size: 10px;
     letter-spacing: 3px;
 }
@@ -621,25 +478,21 @@ button {
 }
 
 
-/* =========================================
-   HIGHLIGHTS
-========================================= */
+/* HIGHLIGHTS */
 
 .highlights-section {
     background: #090909;
 }
 
 .highlights-heading {
-    display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-
+    justify-content: flex-start;
     padding: 70px 0 55px;
 }
 
 .highlights-heading p {
     max-width: 380px;
-
+    padding: 20px;
     color: #777;
 
     font-size: 13px;
@@ -655,7 +508,7 @@ button {
 }
 
 .highlight-card {
-    min-height: 360px;
+    min-height: 240px;
 
     display: flex;
     flex-direction: column;
@@ -676,8 +529,7 @@ button {
     transform: translateY(-5px);
 }
 
-.card-top,
-.card-bottom {
+.card-top{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -685,7 +537,6 @@ button {
 
 .card-top {
     color: #555;
-
     font-size: 10px;
 }
 
@@ -701,9 +552,7 @@ button {
 
 .card-content h3 {
     margin-bottom: 15px;
-
     font-family: "Barlow Condensed", sans-serif;
-
     font-size: 38px;
     font-weight: 700;
 
@@ -712,20 +561,15 @@ button {
 
 .card-content p {
     max-width: 230px;
-
     color: #777;
-
     font-size: 12px;
     line-height: 1.7;
 }
 
 .card-bottom {
     padding-top: 20px;
-
     border-top: 1px solid #222;
-
     color: #555;
-
     font-size: 9px;
     letter-spacing: 2px;
 }
@@ -736,15 +580,7 @@ button {
     font-size: 18px;
 }
 
-
-/* =========================================
-   DETAILS
-========================================= */
-
-/* =========================================
-   SECTION 4 — EVENT DETAILS
-========================================= */
-
+/* EVENT DETAILS */
 .details-section {
     background: #101010;
     padding-bottom: 100px;
@@ -759,7 +595,6 @@ button {
 }
 
 /* LEFT */
-
 .details-intro-block {
     display: flex;
     flex-direction: column;
@@ -881,20 +716,16 @@ button {
 .operation-strip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     margin-top: 60px;
-
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
 
 .operation-strip div {
     padding: 22px 25px;
-
     display: flex;
     flex-direction: column;
     gap: 8px;
-
     border-right: 1px solid #333;
 }
 
@@ -918,10 +749,7 @@ button {
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
-
+/* TABLET */
 @media (max-width: 900px) {
 
     .details-content {
@@ -940,9 +768,7 @@ button {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 650px) {
 
@@ -993,9 +819,7 @@ button {
 }
 
 
-/* =========================================
-   FINAL CTA
-========================================= */
+/* FINAL CTA */
 
 .final-section {
     min-height: 80vh;
@@ -1050,11 +874,8 @@ button {
 
 .final-description {
     max-width: 450px;
-
     margin-top: 30px;
-
     color: #777;
-
     font-size: 14px;
     line-height: 1.7;
 }
@@ -1065,19 +886,13 @@ button {
 
 .final-mark {
     position: absolute;
-
     right: 8vw;
     bottom: 20%;
-
     font-family: "Barlow Condensed", sans-serif;
-
     font-size: 80px;
     font-weight: 900;
-
     line-height: 0.8;
-
     opacity: 0.08;
-
     transform: rotate(-10deg);
 }
 
@@ -1092,33 +907,23 @@ button {
 footer {
     position: relative;
     z-index: 3;
-
     display: flex;
     justify-content: space-between;
-
     padding-top: 20px;
-
     border-top: 1px solid #252525;
-
     color: #555;
-
     font-size: 9px;
     letter-spacing: 2px;
 }
 
-
-/* =========================================
-   MOBILE MENU
-========================================= */
+/* MOBILE MENU  */
 
 .menu-btn {
     display: none;
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
+/* TABLET MENU */
 
 @media (max-width: 900px) {
 
@@ -1147,9 +952,7 @@ footer {
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
+/* MOBILE */
 
 @media (max-width: 650px) {
 
@@ -1177,9 +980,7 @@ footer {
 
     .hero {
         min-height: 100svh;
-
         padding: 20px 6vw;
-
         background-size: auto 600px;
     }
 
@@ -1189,35 +990,27 @@ footer {
 
     .hero-kicker {
         font-size: 8px;
-
         letter-spacing: 2px;
-
         text-align: center;
     }
 
     .logo-container {
         flex-direction: column;
         align-items: center;
-
         font-size: clamp(70px, 21vw, 110px);
-
         letter-spacing: -2px;
     }
 
     .heist {
         margin-top: 8px;
         margin-left: 0;
-
         padding: 5px 14px;
-
         border-width: 3px;
     }
 
     .tagline {
         margin-top: 30px;
-
         font-size: 10px;
-
         letter-spacing: 1px;
     }
 
@@ -1239,20 +1032,17 @@ footer {
 
     .cta {
         width: 100%;
-
         padding: 15px 0;
     }
 
     .hero-bottom {
         font-size: 7px;
-
         letter-spacing: 1px;
     }
 
     .hero-bottom span:nth-child(2) {
         display: none;
     }
-
 
     /* ABOUT */
 
@@ -1277,9 +1067,7 @@ footer {
 
     .about-footer span {
         padding: 15px 5px;
-
         font-size: 8px;
-
         letter-spacing: 1px;
     }
 
@@ -1300,7 +1088,6 @@ footer {
 
 
     /* DETAILS */
-
     .details-layout {
         padding-top: 55px;
     }
@@ -1320,54 +1107,41 @@ footer {
 
 
     /* FINAL */
-
     .final-section {
         min-height: 85svh;
-
         padding: 90px 6vw 25px;
     }
 
     .final-section::before {
         width: 300px;
         height: 300px;
-
         right: -180px;
     }
 
     .final-mark {
         right: 5vw;
         bottom: 25%;
-
         font-size: 60px;
     }
 
     footer {
         flex-direction: column;
-
         gap: 8px;
-
         font-size: 8px;
     }
 
-}/* =========================================
-   MOBILE NAVIGATION
-========================================= */
-
+}
+/* MOBILE NAVIGATION */
 @media (max-width: 650px) {
 
     .navlinks.mobile-open {
         display: flex;
-
         position: absolute;
-
         top: 55px;
         right: 0;
-
         flex-direction: column;
         align-items: flex-end;
-
         gap: 18px;
-
         padding: 20px 0;
 
         background: #090909;
@@ -1378,10 +1152,7 @@ footer {
 }
 
 
-/* =========================================
-   REVEAL ANIMATION
-========================================= */
-
+/* ANIMATION */
 .reveal {
     opacity: 0;
 
