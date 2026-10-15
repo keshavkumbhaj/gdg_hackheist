@@ -68,13 +68,7 @@ button {
     flex-direction: column;
     padding: 25px 7vw 25px;
     background-color: #090909;
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(9, 9, 9, 0.05),
-            rgba(9, 9, 9, 0.75)
-        ),
-        url("./assets/images/hackheist-bg.png");
+    background-image: url("./assets/images/hackheist-bg.png");
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -183,7 +177,7 @@ button {
     }
 }
 
-menu-btn {
+.menu-btn {
     display: none;
     width: 38px;
     height: 32px;
@@ -234,14 +228,10 @@ menu-btn {
 .logo-container {
     display: flex;
     align-items: center;
-
     font-family: "Barlow Condensed", sans-serif;
-
     font-size: clamp(70px, 12vw, 170px);
     font-weight: 900;
-
     line-height: 0.82;
-
     letter-spacing: -3px;
 }
 
@@ -278,14 +268,10 @@ menu-btn {
 
 .tagline {
     margin-top: 35px;
-
     padding: 9px 18px;
-
     border: 1px solid #7c0000;
     border-radius: 999px;
-
     color: #d00000;
-
     font-size: 12px;
     letter-spacing: 1.5px;
 }
@@ -338,13 +324,9 @@ menu-btn {
     display: flex;
     align-items: center;
     gap: 8px;
-
     padding: 9px 15px;
-
     border: 1px solid #292929;
-
     color: #ddd;
-
     font-size: 11px;
     letter-spacing: 1px;
 }
@@ -376,9 +358,7 @@ menu-btn {
     letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
-
     box-shadow: 0 0 18px rgba(179, 0, 0, 0.18);
-
     transition:
         transform 0.25s ease,
         background 0.25s ease,
@@ -502,23 +482,18 @@ menu-btn {
 .highlight-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-
     border-top: 1px solid #292929;
     border-left: 1px solid #292929;
 }
 
 .highlight-card {
     min-height: 240px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding: 25px;
-
     border-right: 1px solid #292929;
     border-bottom: 1px solid #292929;
-
     transition:
         background 0.3s ease,
         transform 0.3s ease;
@@ -662,18 +637,13 @@ menu-btn {
 .detail-number {
     width: 40px;
     height: 40px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: 1px solid #444;
-
     color: #b30000;
-
     font-family: "DM Mono", monospace;
     font-size: 10px;
-
     transition: all 0.25s ease;
 }
 
@@ -751,13 +721,11 @@ menu-btn {
 
 /* TABLET */
 @media (max-width: 900px) {
-
     .details-content {
         grid-template-columns: 1fr;
         gap: 60px;
         min-height: auto;
     }
-
     .details-intro-block {
         justify-content: flex-start;
     }
@@ -767,71 +735,55 @@ menu-btn {
     }
 }
 
-
 /* MOBILE */
 
 @media (max-width: 650px) {
-
     .details-section {
         padding-bottom: 70px;
     }
-
     .details-content {
         padding-top: 50px;
         gap: 50px;
     }
-
     .details-intro-block h2 {
         font-size: 72px;
     }
-
     .details-description {
         margin-top: 25px;
     }
-
     .detail-item {
         grid-template-columns: 42px 1fr;
         gap: 15px;
         min-height: 105px;
     }
-
     .detail-text strong {
         font-size: 15px;
     }
-
     .detail-text small {
         font-size: 9px;
     }
-
     .operation-strip {
         grid-template-columns: 1fr;
         margin-top: 50px;
     }
-
     .operation-strip div {
         border-right: none;
         border-bottom: 1px solid #333;
     }
-
     .operation-strip div:last-child {
         border-bottom: none;
     }
 }
 
-
 /* FINAL CTA */
 
 .final-section {
     min-height: 80vh;
-
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     padding: 120px 7vw 30px;
-
     background:
         linear-gradient(
             120deg,
@@ -839,31 +791,22 @@ menu-btn {
             #0a0a0a 60%,
             #120000 100%
         );
-
     overflow: hidden;
 }
 
 .final-section::before {
     content: "";
-
     position: absolute;
-
     width: 500px;
     height: 500px;
-
     right: -250px;
     top: 50%;
-
     transform: translateY(-50%);
-
     border: 1px solid #320000;
-
     border-radius: 50%;
-
     box-shadow:
         0 0 0 80px #160000,
         0 0 0 160px #100000;
-
     pointer-events: none;
 }
 
@@ -938,7 +881,6 @@ footer {
     .about-layout,
     .details-layout {
         grid-template-columns: 1fr;
-
         gap: 60px;
     }
 
@@ -1026,7 +968,6 @@ footer {
     .date-tag,
     .venue-tag {
         justify-content: center;
-
         width: 100%;
     }
 
@@ -1143,21 +1084,15 @@ footer {
         align-items: flex-end;
         gap: 18px;
         padding: 20px 0;
-
         background: #090909;
-
         z-index: 20;
     }
-
 }
-
 
 /* ANIMATION */
 .reveal {
     opacity: 0;
-
     transform: translateY(25px);
-
     transition:
         opacity 0.7s ease,
         transform 0.7s ease;
@@ -1165,6 +1100,5 @@ footer {
 
 .reveal.revealed {
     opacity: 1;
-
     transform: translateY(0);
 }
